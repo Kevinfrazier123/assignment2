@@ -1,0 +1,61 @@
+1. Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (11/11), 1.85 KiB | 210.00 KiB/s, done.
+Total 11 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/Kevinfrazier123/assignment2.git
+   f4975e5..af577b9  master -> master
+
+   2. Number of commits: 9
+   Command used: git rev-list --count HEAD
+
+   3. Last modified:  Thu Feb 27 01:00:56 2025 -0500
+   command used: git log README.md
+
+   4. 
+   1. They allow parallel development of features or bug fixes.
+    2. They let you experiment without affecting the main or stable branch.
+
+5. - git log: Shows the commit history (who committed, when, and with what message).
+- git status: Shows the state of the working directory and staging area 
+             (which files are modified, untracked, or staged).
+6. Command: git log -- Vehicle.h
+7. Command: git log --grep="file"
+8. (I) Inheritance: The mechanism by which one class (child/subclass) 
+    acquires the properties (methods and fields) of another class (parent/superclass).
+(II) Polymorphism: The ability of different classes to be treated as instances 
+     of the same class through a common interface, often allowing methods 
+     to behave differently based on the object calling them.
+(III) Encapsulation: The bundling of data (variables) and methods 
+      that operate on that data within one unit (class), 
+      while restricting direct access to some of the object’s components.
+
+9.
+- In the "Integration Manager" workflow, there is typically one
+  integration manager responsible for merging developers’ changes
+  into a blessed (central) repository. Each developer maintains their
+  own public repository, pushes their changes there, and then requests
+  the integration manager to merge those changes into the central repo.
+
+- In the "Dictator and Lieutenants" workflow, there is a hierarchy:
+  the “Dictator” owns the central repository (only the Dictator can push
+  directly to it). A set of Lieutenants each manage their own repositories
+  and merge changes from a subset of developers. The Dictator then merges
+  each Lieutenant’s repository changes into the central repository. 
+This approach is common in large-scale projects (like the Linux kernel).
+
+10.
+- With 100 developers, a purely centralized workflow (where everyone
+  attempts to push to a single central repository) can become chaotic 
+  and create bottlenecks.
+
+- The "Dictator and Lieutenants" workflow helps distribute the merging 
+  workload. Each Lieutenant can handle merges for a smaller group of 
+  developers, resolving conflicts and ensuring code quality. 
+  The Dictator then merges only from a handful of Lieutenants rather 
+  than from 100 individual contributors.
+
+- This structure reduces merge conflicts, increases scalability, 
+  and modernize development in large teams.
