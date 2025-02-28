@@ -1,3 +1,7 @@
+Gitlab tutorial: 02/24/2025
+GitHub account: 08/01/2022
+
+
 1. Enumerating objects: 13, done.
 Counting objects: 100% (13/13), done.
 Delta compression using up to 8 threads
